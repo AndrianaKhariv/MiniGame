@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RqCJK/a7uYS+VAi5hUwPQBrit8KAc2zWeLAl2L/fO4o5eqjG4KSI5PhbzIYYdkvgLzrdHzZS/dS1tE34pHjX4Q==",
+  "dgSpecHash": "xT+ctok6jh9CH98UPGZw33RBU2IOt7iHQhQOV8hdXvZyKruWEg6VUIlxfbWe7SadWBVcBCJTxx7NcXv8k2GGnA==",
   "success": true,
   "projectFilePath": "C:\\Users\\andri\\Desktop\\camp\\Mini game\\MiniGame\\MiniGame\\MiniGame.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\andri\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.27\\microsoft.netcore.app.host.win-x64.3.1.27.nupkg.sha512"
+  ],
   "logs": []
 }
