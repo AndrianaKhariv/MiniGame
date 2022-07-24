@@ -22,6 +22,44 @@ namespace MiniGame
         }
     }
 
+    abstract public class Warrior
+    {
+        public int Life = 100;
+        public int Armor;
+        public int ImpactForce;
+    }
+
+    public class Archers : Warrior
+    {
+
+        public int Life;
+        public int Armor = 5;
+        public int ImpactForce = 15;
+
+    }
+    public class Magician : Warrior
+    {
+        public int Life;
+        public int Armor = 15;
+        public int ImpactForce = 5;
+    }
+
+    public class Barbarian : Warrior
+    {
+
+        public int Life;
+        public int Armor = 10;
+        public int ImpactForce = 10;
+
+    }
+    public class Rider : Warrior
+    {
+
+        public int Life;
+        public int Armor = 12;
+        public int ImpactForce = 8;
+    }
+
     class Program
     {
         static void Main(string[] args)
