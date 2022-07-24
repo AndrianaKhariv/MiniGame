@@ -1,4 +1,6 @@
-﻿namespace MiniGame
+﻿using System;
+
+namespace MiniGame
 {
     public class SuperPowerGenerator
     {
