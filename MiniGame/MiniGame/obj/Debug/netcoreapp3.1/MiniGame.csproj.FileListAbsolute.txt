@@ -1,0 +1,13 @@
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\bin\Debug\netcoreapp3.1\MiniGame.exe
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\bin\Debug\netcoreapp3.1\MiniGame.deps.json
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\bin\Debug\netcoreapp3.1\MiniGame.runtimeconfig.json
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\bin\Debug\netcoreapp3.1\MiniGame.runtimeconfig.dev.json
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\bin\Debug\netcoreapp3.1\MiniGame.dll
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\bin\Debug\netcoreapp3.1\MiniGame.pdb
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\obj\Debug\netcoreapp3.1\MiniGame.csprojAssemblyReference.cache
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\obj\Debug\netcoreapp3.1\MiniGame.AssemblyInfoInputs.cache
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\obj\Debug\netcoreapp3.1\MiniGame.AssemblyInfo.cs
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\obj\Debug\netcoreapp3.1\MiniGame.csproj.CoreCompileInputs.cache
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\obj\Debug\netcoreapp3.1\MiniGame.dll
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\obj\Debug\netcoreapp3.1\MiniGame.pdb
+C:\Users\andri\Desktop\camp\Mini game\MiniGame\MiniGame\obj\Debug\netcoreapp3.1\MiniGame.genruntimeconfig.cache
