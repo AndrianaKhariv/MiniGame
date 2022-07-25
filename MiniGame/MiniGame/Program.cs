@@ -155,19 +155,88 @@ namespace MiniGame
     {
         public static void StartBattle(Warrior warrior1, Warrior warrior2)
         {
+            int roundCounter = 0;
+            while(warrior1.IsAlive && warrior2.IsAlive)
+            {
+                int enemyImpactForce = warrior1.Attack();
+                warrior2.Protection(enemyImpactForce);
+
+                enemyImpactForce = warrior2.Attack();
+                warrior1.Protection(enemyImpactForce);
+
+                Console.WriteLine("Warrior 1: {0} {1} {2}", warrior1.Life, warrior1.Armor, warrior1.ImpactForce);
+                Console.WriteLine("Warrior 2: {0} {1} {2}", warrior2.Life, warrior2.Armor, warrior2.ImpactForce);
+
+                roundCounter++;
+            }
+             
+            if (warrior1.IsAlive)
+                Console.WriteLine("Winner: {0} Looser: {1} Life: {2} Round count: {3}", warrior1.GetType(), warrior2.GetType(),
+                    warrior1.Life, roundCounter);
+           else
+                Console.WriteLine("Winner: {0} Looser: {1} Life: {2} Round count: {3}", warrior2.GetType(), warrior1.GetType(),
+                    warrior2.Life, roundCounter);
         }
     }
 
+
     class Program
     {
+        static Warrior ChooseWarrior()
+        {
+            Console.WriteLine("Choose a  warrior: 1. Archers 2. Magician 3. Barbarian 4. Rider ");
+            int choice = Convert.ToInt32(Console.ReadLine());
+            switch (choice)
+            {
+                case 1:
+                    return new Archers();
+                case 2:
+                    return new Magician();
+                case 3:
+                    return new Barbarian();
+                case 4:
+                    return new Rider();
+            }
+
+            return null;
+
+        }
+
+        static ISuperPower ChooseSuperPower(int superPower)
+        {  
+            Console.WriteLine("Your SuperPower: {0}. Choose what to improve: 1. Life 2. Armor 3. ImpactForce ", superPower);
+            int choice = Convert.ToInt32(Console.ReadLine());
+            switch (choice)
+            {
+                case 1:
+                    return new AddSuperLife();
+                case 2:
+                    return new AddSuperArmor();
+                case 3:
+                    return new AddSuperImpactForce();
+            }
+
+            return null;
+
+        }
         static void Main(string[] args)
         {
+
+
+            Warrior warrior1 = ChooseWarrior();
+            Warrior warrior2 = ChooseWarrior();
+
+
             SuperPowerGenerator superPowerGenerator = new SuperPowerGenerator();
-            int superPower = superPowerGenerator.GetSuperPower();
-            Barbarian barbarian = new Barbarian();
-            Console.WriteLine(barbarian.Life);
-            barbarian.AddSuperPower(new AddSuperLife(), superPower);
-            Console.WriteLine(barbarian.Life);
+            int spCount1= superPowerGenerator.GetSuperPower();
+            ISuperPower superPower1 = ChooseSuperPower(spCount1);
+            warrior1.AddSuperPower(superPower1, spCount1);
+            
+            int spCount2= superPowerGenerator.GetSuperPower();                      
+            ISuperPower superPower2 = ChooseSuperPower(spCount2);
+            warrior2.AddSuperPower(superPower2, spCount2);
+
+            Battle.StartBattle(warrior1, warrior2);
 
         }
     }
