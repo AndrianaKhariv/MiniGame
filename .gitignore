@@ -1,0 +1,12 @@
+﻿*.dll
+*.pdb
+*.exe
+*.cache
+*.txt
+*.txt
+*.json
+*.targets
+*.props
+*.editorconfig
+*.txt
+MiniGame/MiniGame/obj/Debug/netcoreapp3.1/MiniGame.csproj.FileListAbsolute.txt
