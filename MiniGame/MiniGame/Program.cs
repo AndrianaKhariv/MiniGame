@@ -171,7 +171,7 @@ namespace MiniGame
             }
              
             if (warrior1.IsAlive)
-                Console.WriteLine("Winner: {0} Looser: {1} Life: {2} Round count: {3}", warrior1.GetType(), warrior2.GetType(),
+                Console.WriteLine("Winner:  {0} Looser: {1} Life: {2} Round count: {3}", warrior1.GetType(), warrior2.GetType(),
                     warrior1.Life, roundCounter);
            else
                 Console.WriteLine("Winner: {0} Looser: {1} Life: {2} Round count: {3}", warrior2.GetType(), warrior1.GetType(),
